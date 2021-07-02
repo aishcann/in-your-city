@@ -1,0 +1,29 @@
+.manageEvents{
+
+    .navbar{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 50px;
+        
+        h1{
+            position:absolute;
+            top: 0;
+            left: 10px;
+        }
+    }
+
+    .event{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+
+        .eventInfo{
+            // height: 200px;
+            // width: 300px;
+
+            img{
+                height:30%;
+                width: 30%;
+            }
+        }
+    }
+}

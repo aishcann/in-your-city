@@ -1,8 +1,11 @@
 import './homepage.scss'
 import eventData from '../../data.json'
+import { useState } from 'react'
 import { Link } from 'react-router-dom' 
 
 const HomePage = ({data}) => {
+
+	const [logout, setLogout] = useState(false)
 
     console.log(data)
     return (
@@ -20,7 +23,7 @@ const HomePage = ({data}) => {
 					{eventData.map((event) => {
 						return (
 							<div className='eventInfo'>
-								<img src={event.photo} alt={event.name} />
+								<img src={event.image} alt={event.name} />
 								<h3>{event.name}</h3>
 								<h4>{event.date}</h4>
 								<h4>{event.time}</h4>

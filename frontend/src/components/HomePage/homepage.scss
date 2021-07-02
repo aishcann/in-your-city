@@ -17,13 +17,19 @@
     }
 
     .eventList {
-
+        height: 300px;
+        width: 600px;
 
         .eventInfo {
             background-color: purple;
             color: white;
             margin: 30px;
             padding: 8px;
+
+            img {
+                height: 60%;
+                width: 60%;
+            }
         }
     }
 
