@@ -5,9 +5,11 @@ const ManageEvents = () => {
     return (
 			<div className='manageEvents'>
 				<section className='navbar'>
-					<h1>In Your City</h1>
-					<button>Manage Events</button>
-					<button>Logout</button>
+					<button className='header'>In Your City</button>
+					<div>
+						<button>Manage Events</button>
+						<button>Logout</button>
+					</div>
 				</section>
 				<section className='event'>
 					{eventData.map((event) => {

@@ -13,11 +13,9 @@ const LoginPage = () => {
 
     return (
 			<div className='login'>
-				<Link to='/'>
 					<section className='header'>
-						<h1>In Your City</h1>
+						<a href='/'><h1>In Your City</h1></a>
 					</section>
-				</Link>
 				{!signup ? (
 					<form className='loginForm'>
 						<h3>Artist Login</h3>

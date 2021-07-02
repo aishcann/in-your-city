@@ -28,7 +28,7 @@ const HomePage = ({data}) => {
 								<h4>{event.date}</h4>
 								<h4>{event.time}</h4>
 								<h4>{event.location}</h4>
-								<h4>{event.link}</h4>
+								<a href={event.link}>{event.link}</a>
 								<p>{event.description}</p>
 							</div>
 						);
