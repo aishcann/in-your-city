@@ -22,7 +22,7 @@ const App = () => {
 				render={(routerProps) => <LoginPage match={routerProps.match} />}
 			/>
 			<Route
-				path='/account'
+				path='/manage'
 				render={(routerProps) => <ManageEvents match={routerProps.match} />}
 			/>
 		</div>

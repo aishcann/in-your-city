@@ -1,18 +1,29 @@
 import './homepage.scss'
 import eventData from '../../data.json'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom' 
 
 const HomePage = ({data}) => {
 
 	const [logout, setLogout] = useState(false)
 
-    console.log(data)
+	// const [events, setEvents] = useState([])
+
+	// useEffect(() => {
+	// 	fetch('http://localhost:8000/events/?format=api')
+	// 		.then((res) => res.json())
+	// 		.then((json) => {
+	// 			setEvents(json);
+	// 			console.log(json);
+	// 		})
+	// 		.catch(console.error);
+	// }, [])
+
     return (
 			<div className='homePage'>
 				<section className='navbar'>
-					<Link to='/login' >
-                        <button>Artist Login</button>
+					<Link to='/manage' >
+                        <button>Share Your Event</button>
                     </Link>
 				</section>
 				<section className='header'>
