@@ -1,1 +1,0 @@
-gunicorn iyc_django.wsgi
