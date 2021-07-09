@@ -1,1 +1,1 @@
-gunicorn iyc_django.wsgi
+web: gunicorn iyc_django.wsgi
